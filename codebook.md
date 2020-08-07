@@ -88,4 +88,4 @@ Data Cleansing
 6. Uses descriptive activity names to name the activities in the data set
 7. Appropriately labels the data set with descriptive variable names.
 8. From the data set in step 7, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-9. The dataset is then written to `tidy.txt` file
+9. The dataset is then written to `tidydataset.txt` file
