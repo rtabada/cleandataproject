@@ -78,23 +78,8 @@ frequencyBodyBodyGyroscopeJerkMagMean      |  mean of fBodyBodyGyroJerkMag-mean(
 frequencyBodyBodyGyroscopeJerkMagStd       |  mean of fBodyBodyGyroJerkMag-std()
 
 
-Transformations
+Data Cleansing
 ---------------
-
-1. Dataset was initially split into subject, activity, and features. Each of these were further split into test and train sets. Merging was performed to get everything in one dataset.
-
-2. Dataset activity variable was merged with the activity lookup table to yield descriptive activity name.
-
-3. Features were filtered to only those matching mean() or std(). Dataset was merged with derived feature code lookup table to get featureName.
-
-4. Datset was melted with subject, activity, and feature as id variables.
-
-5. An average was added per group of subject, activity, and feature
-
-6. Since this is a TIDY data set, new descriptive columns were created to represent specific variables from the single feature variable (Domain,Instrument,Acceleration,StatVariable,Jerk,Magnitude and Axis) using grepl. The original feature is now redundant and removed.
-
-7. The dataset is then written to `tidy.txt` file
-
 1. Load the required package data.table
 2. Download the dataset
 3. Assign all the data frames
