@@ -190,6 +190,6 @@ Checking variable names
 str(data.tidy)
 ```
 
-
+Output can be viewed in rscriptdoc.html file
 
 
